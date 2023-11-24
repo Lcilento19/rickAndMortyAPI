@@ -15,6 +15,10 @@
   vertical-align: middle;
 }
 
+.home-container img:hover {
+  transform: scale(1.05);
+}
+
 .home-container::before {
   content: "";
   display: inline-block;
