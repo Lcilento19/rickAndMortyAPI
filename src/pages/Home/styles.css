@@ -8,9 +8,9 @@
 }
 
 .home-container img {
-  width: 256px; /* Ajuste o tamanho conforme necessário */
+  width: 256px; 
   padding-right: 5vh;
-  margin: 5px; /* Espaçamento entre as imagens */
+  margin: 5px; 
   display: inline-block;
   vertical-align: middle;
 }
