@@ -20,7 +20,7 @@ export default function Locations() {
   }, []);
 
   return (
-    <div className="home-container">
+    <div className="locations-container">
       <h1>Locations</h1>
       {locations.map((location) => (
         <LocationCard key={location.name} location={location} />
