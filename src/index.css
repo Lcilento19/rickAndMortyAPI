@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(19, 18, 18);
+  color: aliceblue;
+}
+
+h1 {
+  text-align: center;
+  padding: 43px;
+  font-family: "RickFont";
+  background: linear-gradient(45deg, #97ce4c, #f0e14a);
+  font-size: 50px;
+  margin-bottom: 5vh;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #131212 #97ce4c;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(19, 18, 18);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #f0e14a;
+}

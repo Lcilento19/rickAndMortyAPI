@@ -1,0 +1,23 @@
+.home-container {
+  text-align: center;
+  width: 100%;
+}
+
+.home-title {
+  margin-bottom: 30vh;
+}
+
+.home-container img {
+  width: 256px; /* Ajuste o tamanho conforme necessário */
+  padding-right: 5vh;
+  margin: 5px; /* Espaçamento entre as imagens */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.home-container::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}

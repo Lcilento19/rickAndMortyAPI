@@ -1,0 +1,36 @@
+/* Card.css */
+@font-face {
+  font-family: "RickFont";
+  src: local("get_schwifty"),
+    url("../../assets/fonts/get_schwifty.ttf") format("truetype");
+}
+
+.link {
+  text-decoration: none;
+  color: aliceblue;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #97ce4c;
+  border-radius: 8px;
+  padding: 16px;
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 15px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.thumbnail {
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-top: 8px;
+}
