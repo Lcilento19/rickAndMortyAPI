@@ -1,6 +1,6 @@
+// PersonDetails.js
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import rickAPI from "../../services/api";
 import "./styles.css";
 
@@ -22,6 +22,16 @@ export default function PersonDetails() {
     fetchData();
   }, [characterID]);
 
+  const mapStatusToEmoji = (status) => {
+    switch (status) {
+      case "Alive":
+        return "🟢";
+      case "Dead":
+        return "🔴";
+      default:
+        return "❔";
+    }
+  };
   return (
     <div className="details-container">
       {character && (
@@ -30,19 +40,16 @@ export default function PersonDetails() {
           <Link to={"/"}>Back Home</Link>
 
           <img src={character.image} alt="" />
-          <p>Status: {character.status}</p>
+          <p>
+            Status: {character.status} {mapStatusToEmoji(character.status)}
+          </p>
           <p>Name: {character.name}</p>
           <p>Species: {character.species}</p>
-          <Link to={`/location/${character.id}`}>
-            <p>Origin: {character.origin.name}</p>
-          </Link>
-          <Link to={`/location/${character.id}`}>
-            <p>Location: {character.location.name}</p>
-          </Link>
-          {JSON.stringify(character)}
+          <p>Origin: {character.origin.name}</p>
+          <p>Location: {character.location.name}</p>
         </div>
       )}
-      <p>Not Characters Found</p>
+      {!character && <p>Character not found</p>}
     </div>
   );
 }

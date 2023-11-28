@@ -21,7 +21,7 @@ export default function Characters() {
 
   return (
     <div className="characters-container">
-      <h1>character</h1>
+      <h1>Personagens</h1>
       {characters.map((character) => (
         <CharactersCard key={character.id} character={character} />
       ))}

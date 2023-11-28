@@ -6,7 +6,6 @@
 
 .link {
   text-decoration: none;
-  color: aliceblue;
 }
 .card {
   display: flex;
@@ -32,4 +31,14 @@
   object-fit: contain;
   border-radius: 8px;
   margin-top: 8px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: aliceblue;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+
 }

@@ -1,3 +1,29 @@
+/* styles.css */
 .details-container {
-  background-color: rgb(19, 18, 18);
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.details-container img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10%;
+}
+
+.details-container h1 {
+  color: #ffffff;
+}
+
+.details-container p {
+  margin: 8px 0;
+}
+
+.details-container a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
 }

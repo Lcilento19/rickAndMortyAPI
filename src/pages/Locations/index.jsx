@@ -21,7 +21,7 @@ export default function Locations() {
 
   return (
     <div className="locations-container">
-      <h1>Locations</h1>
+      <h1>Localidades</h1>
       {locations.map((location) => (
         <LocationCard key={location.name} location={location} />
       ))}
